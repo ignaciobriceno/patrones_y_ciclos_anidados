@@ -147,17 +147,16 @@ numero_cero(n)
 
 def navidad(n)
 	# Parte superior 
-      n.times do |i|  	
-		
-		i.times do |j|
-
-		   print '*'
-		
-		end  
-	    
-	  print "\n"
-
-      end
+      (n - 1 ).times do |i|
+		    n.times do |j|
+		    if j == (n - 2)/2 
+		    	print "*" * i
+		    else 
+		    	print " "
+		    end
+		    end		    
+		    print "\n"
+		end
 
 
        # Parte del medio       
